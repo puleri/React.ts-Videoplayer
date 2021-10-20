@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactPlayer from 'react-player';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactPlayer
+      controls
+      width='i640px'
+      height='540px'
+      onReady={() => console.log('ready')}
+      onStart={() => console.log('start')}
+      onPause={() => console.log('pause')}
+      onEnded={() => console.log('ended')}
+      onError={() => console.log('error')}
+      url='https://www.youtube.com/watch?v=bn-DQCifeQQ&ab_channel=KevinPowell' />
     </div>
   );
 }
