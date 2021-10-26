@@ -3,6 +3,14 @@
   justify-content: center;
 }
 
+.playerContainer {
+  width: 100%;
+  margin: 50px;
+}
+.videoBox {
+  position: relative;
+  aspect-ratio: 4 / 1;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
