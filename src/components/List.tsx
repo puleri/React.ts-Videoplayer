@@ -1,22 +1,6 @@
 import React from 'react'
+import { IState as IProps } from './ToDo'
 
-// this interface is a strongly typed way of setting  a state like
-// const [people, setPeople] = useState([{
-//  name: "",
-//  age: undefined,
-//  url: "etc..."
-// }])
-interface IProps {
-  people: {
-    // defining state
-    name: string
-    age: number
-    url: string
-    // ? makes it optional
-    note?: string
-    // [] makes this an array of objects
-  }[]
-}
 
 // in order to pass and recieve the prop of people, we need the same
  // interface in this component & this is one way we can recieve them

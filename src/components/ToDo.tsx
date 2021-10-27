@@ -2,25 +2,26 @@ import React, { useState } from 'react';
 import AddToList from './AddToList';
 import List from './List'
 
-export default function ToDo() {
-
-  // this interface is a strongly typed way of setting  a state like
-  // const [people, setPeople] = useState([{
+// this interface is a strongly typed way of setting  a state like
+// const [people, setPeople] = useState([{
   //  name: "",
   //  age: undefined,
   //  url: "etc..."
   // }])
-  interface IState {
-    people: {
-      // defining state
-      name: string
-      age: number
-      url: string
-      // ? makes it optional
-      note?: string
-      // [] makes this an array of objects
-    }[]
-  }
+export interface IState {
+  people: {
+    // defining state
+    name: string
+    age: number
+    url: string
+    // ? makes it optional
+    note?: string
+    // [] makes this an array of objects
+  }[]
+}
+
+export default function ToDo() {
+
 
   const [people, setPeople] = useState<IState["people"]>([
     {
@@ -36,7 +37,7 @@ export default function ToDo() {
       <h1>People</h1>
       <br />
       <List people={people}/>
-      <AddToList />
+      <AddToList people={people} setPeople={setPeople}/>
     </>
   )
 }
