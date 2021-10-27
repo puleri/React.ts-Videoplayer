@@ -2,6 +2,7 @@ import { useRef, useState, FC } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ToDo from './components/ToDo'
+import KrakenContain from './components/KrakenContain';
 
 
 // "Function component"
@@ -17,9 +18,8 @@ const App:FC = () => {
 
   return (
     <div className="App">
-
-      <ToDo />
-
+    
+        <KrakenContain />
 
     </div>
   );

@@ -1,15 +1,35 @@
 .App {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-family: "Sora", sans-serif;
 }
 
 .playerContainer {
   margin: 50px;
 }
-.videoBox {
-  position: relative;
-  aspect-ratio: 4 / 1;
+.list {
+  width: 100%;
+  background: pink;
 }
+.img {
+  height: 200px;
+  width: auto;
+}
+
+.hero-photo {
+  overflow: hidden;
+}
+.shot {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

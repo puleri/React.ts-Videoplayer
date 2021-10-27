@@ -12,7 +12,7 @@ const List: React.FC<IProps> = ({ people }) => {
         return (
           <div>
             <h2>{person.name}</h2>
-            <img src={person.url} />
+            <img className="img" src={person.url} />
             <p>{person.age} years old</p>
             <p>{person.note}</p>
           </div>
@@ -22,10 +22,12 @@ const List: React.FC<IProps> = ({ people }) => {
 
   return (
     <>
+    <div className="list">
     <h1>List</h1>
     <ul>
       {renderList()}
     </ul>
+    </div>
     </>
   )
 }
