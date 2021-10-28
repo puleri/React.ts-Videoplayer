@@ -19,10 +19,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 90px;
+  height: 60px;
 }
 .img {
-  height: 70px;
+  height: 30px;
   width: auto;
   filter: grayscale(30%) brightness(.92);
 }
@@ -52,7 +52,13 @@ body {
     letter-spacing: -5px;
   }
 }
-
+#kraken-h5 {
+  position: absolute;
+  top: 70%;
+  left: 40px;
+  width: 160px;
+  text-decoration: underline;
+}
 #kraken-h1 {
   position: absolute;
   text-align: center;
