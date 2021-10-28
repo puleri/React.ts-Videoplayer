@@ -15,23 +15,81 @@ body {
   width: 100%;
   background: pink;
 }
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+}
 .img {
-  height: 200px;
+  height: 70px;
   width: auto;
+  filter: grayscale(30%) brightness(.92);
 }
 
 .hero-photo {
+  display: inline-block;
+  position: relative;
   overflow: hidden;
+  width: 100vw;
 }
 .shot {
-  display: block;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
   width: 100%;
+  z-index: -2;
 }
 
+@keyframes slideIn {
+  0% {
+    letter-spacing: -60px;
+  }
+  20% {
+    letter-spacing: -60px;
+  }
+  100% {
+    letter-spacing: -5px;
+  }
+}
 
+#kraken-h1 {
+  position: absolute;
+  text-align: center;
+  text-shadow:
+   -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+     2px 2px 0 #fff;
+  top: 30%;
+  width: 100%;
+  letter-spacing: -5px;
+  font-size: 70px;
+  animation: 3.3s ease 0s 1 slideIn;
+}
+@media (min-width: 900px) {
+  #kraken-h1 {
+    font-size: 100px;
+    text-shadow:
+     -5px -5px 0 #fff,
+      5px -5px 0 #fff,
+      -5px 5px 0 #fff,
+       5px 5px 0 #fff;
+  }
+}
+.new-button {
+  display: block;
+  margin-left: auto;
+  margin-top: 50%;
+  margin-bottom: 100px;
+  margin-right: auto;
+  background: black;
+  border: none;
+  color: white;
+  font-family: "Sora", sans-serif;
+  height: 40px;
+  width: 230px;
+}
 
 .App-logo {
   height: 40vmin;
