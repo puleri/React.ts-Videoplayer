@@ -18,7 +18,7 @@ const App:FC = () => {
 
   return (
     <div className="App">
-    
+
         <KrakenContain />
 
     </div>
